@@ -1,0 +1,83 @@
+{
+  // Name your instance!
+  "title": "User Set",
+
+  // favicon default name
+  // alternatively, set up a fully specified Url to your own favicon
+  "favicon": "favicon.ico",
+  
+  //IP and port which etherpad should bind at
+  "ip": "0.0.0.0",
+  "port" : 9001,
+
+  // Session Key, used for reconnecting user sessions
+  // Set this to a secure string at least 10 characters long.  Do not share this value.
+  "sessionKey" : "",
+
+
+  //The Type of the database. You can choose between dirty, postgres, sqlite and mysql
+  //You shouldn't use "dirty" for for anything else than testing or development
+   "dbType" : "mysql",
+   "dbSettings" : {
+                    "user"    : "$dbuser", 
+                    "host"    : "$dbhost", 
+                    "password": "$dbpasswd", 
+                    "database": "$dbname"
+                  },
+  
+  
+  //the default text of a pad
+  "defaultPadText" : "User Set Welcome to Etherpad!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\nGet involved with Etherpad at http:\/
+\/etherpad.org\n",
+  
+  "requireSession" : false,
+
+  "editOnly" : false,
+
+  "sessionNoPassword" : false,
+ 
+  "minify" : true,
+
+  "maxAge" : 21600, // 60 x 60 x 6 = 6 hours
+  
+  "abiword" : null,
+ 
+  "requireAuthentication": false,
+
+  "requireAuthorization": false,
+  
+  "trustProxy": false,
+  
+  "disableIPlogging": false,  
+  
+  
+  "users": {
+    "admin": {
+      "password": "userset",
+      "is_admin": true
+    }
+ },
+
+  // restrict socket.io transport methods
+  "socketTransportProtocols" : ["xhr-polling", "jsonp-polling", "htmlfile"],
+  
+  "loglevel": "INFO",
+  //Logging configuration. See log4js documentation for further information
+  // https://github.com/nomiddlename/log4js-node
+  // You can add as many appenders as you want here:
+  "logconfig" :
+    { "appenders": [
+        { "type": "console"
+        //, "category": "access"// only logs pad access
+        }
+    
+      , { "type": "file"
+      , "filename": "/home/app/log/ether.log"
+      , "maxLogSize": 1024
+      , "backups": 3 // how many log files there're gonna be at max
+      //, "category": "test" // only log a specific category
+        }
+      ]
+    }
+}
+

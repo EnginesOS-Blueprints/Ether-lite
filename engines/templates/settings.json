@@ -5,7 +5,7 @@
 */
 {
   // Name your instance!
-  "title": "UserSet",
+  "title": "_ENGINES_Title",
 
   // favicon default name
   // alternatively, set up a fully specified Url to your own favicon
@@ -35,12 +35,6 @@
 
   //The Type of the database. You can choose between dirty, postgres, sqlite and mysql
   //You shouldn't use "dirty" for for anything else than testing or development
-  "dbType" : "dirty",
-  //the database specific settings
-  "dbSettings" : {
-                   "filename" : "var/dirty.db"
-                 },
-
    An Example of MySQL Configuration
    "dbType" : "_ENGINES_dbflavor",
    "dbSettings" : {
@@ -92,7 +86,7 @@
   
   "users": {
     "admin": {
-      "password": "changeme1",
+      "password": "_ENGINES_Admin_Password",
       "is_admin": true
     },
     "user": {

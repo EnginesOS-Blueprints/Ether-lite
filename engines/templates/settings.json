@@ -35,13 +35,13 @@
 
   //The Type of the database. You can choose between dirty, postgres, sqlite and mysql
   //You shouldn't use "dirty" for for anything else than testing or development
-   An Example of MySQL Configuration
+
    "dbType" : "_ENGINES_dbflavor",
    "dbSettings" : {
                     "user"    : "_ENGINES_dbuser",
                     "host"    : "_ENGINES_dbhost",
                     "password": "_ENGINES_dbpasswd",
-                    "database": "store"
+                    "database": "_ENGINES_dbname"
                   },
   
 

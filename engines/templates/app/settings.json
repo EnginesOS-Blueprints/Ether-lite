@@ -3,7 +3,7 @@
   "favicon": "favicon.ico",
   "ip": "0.0.0.0",
   "port" : 9001,
-  "sessionKey" : "",
+  "sessionKey" : "random",
    "dbType" : "_ENGINES_dbflavor",
    "dbSettings" : {
                     "user"    : "_ENGINES_dbuser",

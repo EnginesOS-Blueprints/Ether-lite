@@ -26,12 +26,12 @@
 
   "requireAuthentication": true,
 
-  
+
   "requireAuthorization": false,
 
   "trustProxy": true,
 
- 
+
   "disableIPlogging": false,
 
  "users": {
@@ -46,7 +46,7 @@
   },
   
 
-  
+ 
   "socketTransportProtocols" : ["xhr-polling", "jsonp-polling", "htmlfile"],
 
   "toolbar": {
@@ -82,4 +82,4 @@
         }
       ]
     }
-}	
+}
